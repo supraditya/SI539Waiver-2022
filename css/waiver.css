@@ -45,5 +45,22 @@
     .container
     {
         grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 6.66%;
+    }
+    .container>figure
+    {
+        margin: 0;
+    }
+    .container>figure:nth-child(even)
+    {
+        grid-column-start: 3;
+        grid-column-end: span 2;
+        margin: 0;
+    }
+    .container>figure:last-child
+    {
+        grid-column-start: 2;
+        grid-column-end: span 2;
     }
 }
+
