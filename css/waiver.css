@@ -64,3 +64,29 @@
     }
 }
 
+/* Problem 4 */
+@media only screen and (min-width: 900px)
+{
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 2% 0 2%;
+    }
+    .container>figure
+    {
+        width: 20%;
+        order: 0;
+    }
+    .container>figure:nth-child(2)
+    {
+        order: 1
+    }
+    .container>figure:nth-child(4n)
+    {
+        border: solid 10px black;
+        width: 40%;
+    }
+}
