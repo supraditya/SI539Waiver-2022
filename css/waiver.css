@@ -1,0 +1,39 @@
+/* Problem 1 */
+
+.container
+{
+    display: grid;
+    grid-template-columns: 100%;
+    width: min(70%, 375px);
+    margin: auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.container>figure>img
+{
+    width: 100%;
+}
+
+/* Problem 2 */
+
+@media only screen and (min-width: 650px)  {
+    .jump:focus{
+        top: 0;
+    }
+    .container
+    {
+        width: 95%;
+        background-image: url(../images/concrete_seamless.png);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container>figure
+    {
+        grid-column-start: span 2;
+        margin: 0 5% 0 5%;
+    }
+    .container>figure:nth-child(even)
+    {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+}
