@@ -30,3 +30,13 @@ caption.addEventListener("mouseenter", ()=>{
 caption.addEventListener("mouseleave", ()=>{
     caption.style.fontFamily=prev_font;
 });
+
+// Problem 5
+caption.tabIndex=1;
+caption.addEventListener("focusin", ()=>{
+    prev_font=caption.style.fontFamily;
+    caption.style.fontFamily="cursive"
+});
+caption.addEventListener("focusout", ()=>{
+    caption.style.fontFamily=prev_font;
+});
