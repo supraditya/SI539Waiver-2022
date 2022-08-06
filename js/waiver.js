@@ -21,22 +21,25 @@ fifth_figure.addEventListener("dblclick", () => {
 
 // Problem 4
 
-var caption=document.querySelector(".container>figure:first-child>figcaption");
-var prev_font=""
-caption.addEventListener("mouseenter", ()=>{
-    prev_font=caption.style.fontFamily;
-    caption.style.fontFamily="cursive"
+var caption = document.querySelector(
+  ".container>figure:first-child>figcaption"
+);
+var prev_font = "";
+caption.addEventListener("mouseenter", () => {
+  prev_font = caption.style.fontFamily;
+  caption.style.fontFamily = "cursive";
 });
-caption.addEventListener("mouseleave", ()=>{
-    caption.style.fontFamily=prev_font;
+caption.addEventListener("mouseleave", () => {
+  caption.style.fontFamily = prev_font;
 });
 
 // Problem 5
-caption.tabIndex=1;
-caption.addEventListener("focusin", ()=>{
-    prev_font=caption.style.fontFamily;
-    caption.style.fontFamily="cursive"
+
+caption.tabIndex = 1;
+caption.addEventListener("focusin", () => {
+  prev_font = caption.style.fontFamily;
+  caption.style.fontFamily = "cursive";
 });
-caption.addEventListener("focusout", ()=>{
-    caption.style.fontFamily=prev_font;
+caption.addEventListener("focusout", () => {
+  caption.style.fontFamily = prev_font;
 });
