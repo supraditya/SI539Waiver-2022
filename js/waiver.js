@@ -18,3 +18,15 @@ var fifth_figure = document.querySelector(".container>figure:nth-child(5)");
 fifth_figure.addEventListener("dblclick", () => {
   fifth_figure.style.visibility = "hidden";
 });
+
+// Problem 4
+
+var caption=document.querySelector(".container>figure:first-child>figcaption");
+var prev_font=""
+caption.addEventListener("mouseenter", ()=>{
+    prev_font=caption.style.fontFamily;
+    caption.style.fontFamily="cursive"
+});
+caption.addEventListener("mouseleave", ()=>{
+    caption.style.fontFamily=prev_font;
+});
